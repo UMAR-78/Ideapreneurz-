@@ -148,3 +148,21 @@ document.addEventListener("DOMContentLoaded", function () {
     modalCont.classList.remove("offer-modal-active");
   });
 });
+
+
+// contact form
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('.contact-form');
+  const modalContainer = document.querySelector('.contact-modal-container');
+  const modalCloseBtn = document.querySelector('.contact-ModalClose');
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    modalContainer.classList.add('contact-modal-active');
+    form.reset();
+  });
+
+  modalCloseBtn.addEventListener('click', () => {
+    modalContainer.classList.remove('contact-modal-active');
+  });
+});
