@@ -36,6 +36,11 @@ let currentSlide = 0;
 let intervalTime = 5000;
 let slideInterval;
 
+slides.forEach(slide => {
+  const img = new Image();
+  img.src = slide.bg;
+});
+
 let isLayer1Active = true;
 
 function updateSlide(index) {
