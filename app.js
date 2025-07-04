@@ -16,17 +16,17 @@ const layer2 = document.querySelector(".layer2");
 
 const slides = [
   {
-    bg: "/assets/Slide-img1.png",
+    bg: "./assets/Slide-img1.png",
     h2: "<span>Ideas</span> Realized",
     p: "We are a team of creators working at the intersection of design and technology.",
   },
   {
-    bg: "/assets/Slide-img2.png",
+    bg: "./assets/Slide-img2.png",
     h2: "<span>Ideas</span> Realized",
     p: "We are a team of creators working at the intersection of design and technology.",
   },
   {
-    bg: "/assets/Slide-img3.png",
+    bg: "./assets/Slide-img3.png",
     h2: "<span>Ideas</span> Realized",
     p: "We are a team of creators working at the intersection of design and technology.",
   },
