@@ -33,7 +33,7 @@ const slides = [
 ];
 
 let currentSlide = 0;
-let intervalTime = 3000;
+let intervalTime = 5000;
 let slideInterval;
 
 let isLayer1Active = true;
