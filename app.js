@@ -5,6 +5,7 @@ menuToggler.addEventListener('click',()=>{
     navMenu.classList.toggle('nav-menu-active')
 })
 
+document.addEventListener("DOMContentLoaded", function () {
 // hero slider
 const hero = document.querySelector(".hero");
 const heading = hero.querySelector(".hero-art-content h2");
@@ -74,6 +75,8 @@ hero.addEventListener("click", (e) => {
     resetInterval();
   }
 });
+
+})
 
 
 // Offer modals
