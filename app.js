@@ -18,17 +18,17 @@ const slides = [
   {
     bg: "./assets/Slide-img1.png",
     h2: "<span>Ideas</span> Realized",
-    p: "We are a team of creators working at the intersection of design and technology.",
+    p: "We are a team of….and we work at the intersection of…",
   },
   {
     bg: "./assets/Slide-img2.png",
     h2: "<span>Ideas</span> Realized",
-    p: "We are a team of creators working at the intersection of design and technology.",
+   p: "We are a team of….and we work at the intersection of…",
   },
   {
     bg: "./assets/Slide-img3.png",
     h2: "<span>Ideas</span> Realized",
-    p: "We are a team of creators working at the intersection of design and technology.",
+     p: "We are a team of….and we work at the intersection of…",
   },
 ];
 

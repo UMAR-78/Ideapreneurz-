@@ -1459,6 +1459,9 @@ font-size: 16px;
     max-width: 50px;
 }
 
+.feat-container{
+    padding-top: 60px;
+}
 
 .feature-content h2{
 font-size: 40px;
