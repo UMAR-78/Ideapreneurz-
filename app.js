@@ -166,3 +166,17 @@ document.addEventListener('DOMContentLoaded', function () {
     modalContainer.classList.remove('contact-modal-active');
   });
 });
+
+
+// About slider
+document.addEventListener('DOMContentLoaded',()=>{
+  const aboutDisplayImg=document.querySelector('.about-display img')
+  const aboutSlidesImages=document.querySelectorAll('.about-slideImg')
+  aboutSlidesImages.forEach(slide=>{
+    slide.addEventListener('click',(e)=>{
+     const clickedImg = slide.querySelector('img')
+     aboutDisplayImg.src = clickedImg.src;
+      
+    })
+  })
+})
