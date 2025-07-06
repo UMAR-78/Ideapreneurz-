@@ -592,6 +592,7 @@ gap: 10px;
 /* DIFFERENCES SECTION */
 .diff-cont{
     margin-block: 20px;
+    background: #D9D9D966;
 }
 .diff-h{
     background: var(--primary-blue);
@@ -1737,7 +1738,7 @@ font-size: 20px;
   position: relative;
 }
 .diff-content{
-    padding: 30px 0;
+    padding: 30px 0 60px 0;
     gap: 80px;
 }
 
