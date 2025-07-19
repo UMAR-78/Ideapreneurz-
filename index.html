@@ -10,6 +10,9 @@
     href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
     rel="stylesheet"
 />
+ <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 <body>
     <nav>
@@ -58,26 +61,61 @@
        </div>
     </nav>
   <main class="hero">
-    <div class="hero-bg-overlay layer1"></div>
-  <div class="hero-bg-overlay layer2"></div>
-
-  <article class="hero-art hero-slide active">
-    <div class="hero-art-bg">
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+         <article class="hero-art hero-slide ">
+    <div class="hero-art-img hero-art-img1">
+      <div class="hero-art-bg ">
       <div class="hero-art-content">
-        <h2><span>Ideas</span> Realized</h2>
-        <p> We are a team of….and we work at the intersection of…</p>
+        <h2>Idea to impact. </br> Engineered for outcomes. </h2>
+        <p> We turn ideas into real products with teams built for speed, precision, and results.</p>
        
         <div class="hero-slider-arrow">
           <img src="./assets/hero-slider-arrow.png" alt="arrow" />
         </div>
       </div>
-      <div class="hero-nav">
-        <span ></span>
-        <span></span>
-        <span></span>
-      </div>
+    </div>
     </div>
   </article>
+      </div>
+      <div class="swiper-slide">
+         <article class="hero-art hero-slide ">
+    <div class="hero-art-img hero-art-img2">
+      <div class="hero-art-bg">
+      <div class="hero-art-content">
+        <h2>Engineering ideas.</br>  Delivering outcomes.</br> Scaling impact. </h2>
+        <p> We build lean teams that take ideas to market—and scale them with purpose.</p>
+       
+        <div class="hero-slider-arrow">
+          <img src="./assets/hero-slider-arrow.png" alt="arrow" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+      </div>
+      <div class="swiper-slide">
+         <article class="hero-art hero-slide ">
+    <div class="hero-art-img hero-art-img3">
+      <div class="hero-art-bg ">
+      <div class="hero-art-content">
+        <h2>Clarity. Velocity. Results. </br> From idea to execution. </h2>
+        <p>Sharp focus, fast execution, real outcomes—at every step of your product journey.</p>
+       
+        <div class="hero-slider-arrow">
+          <img src="./assets/hero-slider-arrow.png" alt="arrow" />
+        </div>
+      </div>
+    </div>
+    </div>
+  </article>
+      </div>
+      
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+ 
 </main>
 
 <!-- features -->
@@ -131,7 +169,7 @@
         <div class="feat-cardImg">
           <img src="./assets/featureCard6.png" alt="feature">
         </div>
-        <p>No real ownership, no true partnership.</p>
+        <p>No real ownership, <br> no true partnership.</p>
       </article>
     </div>
    <div class="feature-img">
@@ -258,8 +296,8 @@ We treat your goals like our own—thinking beyond deliverables to long-term suc
     <div class="section who-sect">
   
       <article class="who-content">
-        <h2>Who We <span>Are</span></h2>
-        <p>We are a growing team of engineers, consultants, and product thinkers who have helped businesses at every stage—from zero to launch, and from chaos to scale. We combine startup scrappiness with enterprise rigor, and our team spans multiple time zones, bringing global delivery with boutique attention. </p>
+        <h2>Who <span>We</span> Are</h2>
+        <p>We are a growing team of engineers, consultants, and product thinkers who have helped businesses at every <span style="white-space: nowrap;">stage—from</span> zero to launch, and from chaos to scale. We combine startup scrappiness with enterprise rigor, and our team spans multiple time zones, bringing global delivery with boutique attention. </p>
         <p>We come from diverse industries and backgrounds, but are united by a shared belief: great outcomes come from great alignment—of people, priorities, and execution.</p>
       </article>
           <div class="who-media">
@@ -514,11 +552,12 @@ We treat your goals like our own—thinking beyond deliverables to long-term suc
         <p>We’d love to learn more about your goals and see how we can help.</p>
       </div>
       <ul class="footer-links">
-        <li><a href="#"><span><img src="./assets/offices.svg" alt="offices"></span><p>Offices in the US & India</p></a></li>
+        <li><span><img src="./assets/offices.svg" alt="offices"></span><p>Offices in the US & India</p></li>
         <li><a href="./index.html"><span><img src="./assets/home.svg" alt="Home"></span><p>Home</p></a></li>
         <li><a href="#contactSect"><span><img src="./assets/contact.svg" alt="Contact"></span><p>Contact us</p></a></li>
         <li><a href="./about.html"><span><img src="./assets/about.svg" alt="About"></span><p>About us</p></a></li>
-        <li><a href="#"><span><img src="./assets/privacy.svg" alt="Privacy"></span><p>Privacy Policy</p></a></li>
+        <li><span><img src="./assets/footer-career.svg" alt="Privacy"></span><p>Career</p></li>
+        <li><span><img src="./assets/privacy.svg" alt="Privacy"></span><p>Privacy Policy</p></li>
       </ul>
     </div>
     <div class="footer-cr">
@@ -530,6 +569,26 @@ We treat your goals like our own—thinking beyond deliverables to long-term suc
   </div>
  </footer>
 
+   <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      loop:true,
+      autoplay:true,
+    });
+
+    const swiperContainer = document.querySelector(".mySwiper");
+swiperContainer.addEventListener("click", () => {
+  swiper.slideNext(); 
+});
+  </script>
+  
   <script src="./app.js"></script>
 </body>
 </html>
