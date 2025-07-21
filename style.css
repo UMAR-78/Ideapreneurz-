@@ -259,14 +259,7 @@ background:url('./assets/slideImg3.webp') center/cover no-repeat;
     max-width: 1140px;
     margin: 0 auto;
 }
-.hero-slider-arrow{
-    padding-top: 50px;
-    max-width: 30px;
-    justify-self: end;
-    position: absolute;
-    bottom: 7%;
-    right: 5%;
-}
+
 .hero-art-content h2{
 font-family: "Inter", sans-serif;
 font-weight: 800;
@@ -1013,7 +1006,10 @@ line-height: 1.2;
 }
 .contact-link-info .schedule-link{
     color: var(--primary-blue);
-    text-decoration: underline;
+    font-weight: 600;
+font-size: 20px;
+line-height: 1.2;
+
 }
 .contact-form{
     background: var(--grey);
@@ -1478,10 +1474,7 @@ font-size: 16px;
 .hero-btn span i{
     font-size: 35px;
 }
-.hero-slider-arrow{
-    max-width: 50px;
-    padding-top: 0;
-}
+
 
 .feat-container{
     padding-top: 60px;
@@ -1606,7 +1599,7 @@ margin-bottom: 40px;
 font-size: 23px;
 }
 .contact-header h2{
-font-size: 73px;
+font-size: 55px;
 line-height: 1;
 
 }
